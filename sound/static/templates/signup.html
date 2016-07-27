@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1>helloworld!</h1>
+			<p>template for IoT</p>
+			<p><a class="btn btn-default btn-lg" role="button">Learn More </a></p>
+		</div>
+	</div>
+
+	{% endblock %}
+
+{% block content %}
+
+<div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="{% url "aboutus" %}" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="{% url "aboutus" %}" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+
+<h1>Pre-Order</h1>
+<p>To join the course please join</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RC4J6J8GZ8H8J">
+<input type="hidden" name="on0" value="Course">Course</td></tr><tr><td>
+
+<select class="form-control" name="os0">
+  <option value="Basic">Basic $99.00 USD</option>
+  <option value="Basic +">Basic + $149.00 USD</option>
+  <option value="Premium">Premium $199.00 USD</option>
+</select> 
+<br/>
+<br/>
+<input type="hidden" name="currency_code" value="USD"> <br/>
+  <input type='submit' class='btn btn-success'>
+
+</form>
+  
+
+
+        </div>
+
+
+
+{% endblock %}
